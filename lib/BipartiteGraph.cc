@@ -295,7 +295,7 @@ void BipartiteGraph::lpGeneral(const char* file_name) {
 }
 
 void BipartiteGraph::tripObjective(const char* file_name) {
-    std::cout << "Called"<<std::endl;
+    //std::cout << "Called"<<std::endl;
     std::ofstream out;
     out.open(file_name, std::ios::out);
     out << "minimize\n";
@@ -516,9 +516,9 @@ void BipartiteGraph::calcMaxdev() {
     for(auto i: B_) {
         maxDev = std::max(maxDev, int(i.second->get_partner_list().size()-i.second->get_upper_quota()));
         avgDev += int(i.second->get_partner_list().size() - i.second->get_upper_quota());
-        std::cout << maxDev << " " << avgDev << std::endl;
+        //std::cout << maxDev << " " << avgDev << std::endl;
     }
-    std::cout << B_.size()<<std::endl;
+    //std::cout << B_.size()<<std::endl;
     avgDev /= B_.size();
 }
 
