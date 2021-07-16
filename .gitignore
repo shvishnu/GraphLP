@@ -6,3 +6,4 @@ build
 *.sol
 *.xml
 __pycache_
+solver/env
