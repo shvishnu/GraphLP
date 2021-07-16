@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ $# -lt 0 ]
+if [ $# -eq 0 ]
   then
     echo "Command Format: bash lpsolver.sh file1.lp file2.lp"
     echo "where file1.lp is the file with quadruple lp constraints and file2.lp is the file with triplet lp constraints"
@@ -13,5 +13,5 @@ if [ $# -lt 0 ]
     python3 solver/convert.py $f1 > temp/quadtemp.txt
     python3 solver/convert.py $f2 > temp/tritemp.txt
     touch solution.txt
-    ./build/rev -i input.txt -o solution.txt -q temp/quadtemp.txt -t temp/tritemp.txt
+    ./build/rev -i $3 -o solution.txt -q temp/quadtemp.txt -t temp/tritemp.txt
 fi
