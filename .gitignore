@@ -5,5 +5,5 @@ build
 *.lp
 *.sol
 *.xml
-__pycache_
+__pycache__
 solver/env
