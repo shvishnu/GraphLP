@@ -28,5 +28,5 @@ To use the lpsolver to compute the matching for the generated LPs, use `lpsolver
 
 For e.g., to compute the matching for input input.txt, use the following command:
 
-	$ bash lpsolver.sh quadruple.lp triplet.lp
+	$ bash lpsolver.sh quadruple.lp triplet.lp input.txt
 The output will be stored in solution.txt
