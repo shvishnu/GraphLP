@@ -1,6 +1,5 @@
 # GraphLP
-A graph matching library which provides stable and popular matching algorithms for the HR problem.
-
+Finding a Stable Matching with flexible quotas, given a graph where every vertex has a strict order of preference order of its neighbours using Linear Programming.
 
 ## Dependencies:
 + clang compiler, cmake, ninja, cplex
