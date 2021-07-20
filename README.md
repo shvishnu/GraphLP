@@ -21,7 +21,7 @@ This should build an executable named getlp and rev inside the build directory.
 The executable takes a set of parameters to compute the desired matching:
 
 	-i -- /path/to/preferencelist
-	-o -- /path/to/store/the/quadruplelp (ending with .lp)
+	-q -- /path/to/store/the/quadruplelp (ending with .lp)
     -t -- /path/to/store/the/tripletlp (ending with .lp)
 To use the lpsolver to compute the matching for the generated LPs, use `lpsolver.sh`
 
